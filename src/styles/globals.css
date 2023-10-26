@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Core";
+  src:
+    url("/fonts/CoreMellow.ttf") format("ttf"),
+    url("/fonts/CoreMellow.woff2") format("woff2"),
+    url("/fonts/CoreMellow.woff") format("woff");
+}
+@font-face {
+  font-family: "Bingo";
+  src:
+    url("/fonts/BINGO.ttf") format("ttf"),
+    url("/fonts/BINGO.woff") format("woff");
+}
+@font-face {
+  font-family: "Tenar";
+  src:
+    url("/fonts/Tenar.ttf") format("ttf"),
+    url("/fonts/Tenar.woff2") format("woff2");
+}
