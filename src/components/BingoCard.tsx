@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import textList from "@/utils/textDatabase";
 import { dabberImages } from "@/utils/dabberList";
+import Image from "next/image";
 
 interface BingoCardProps {
   className?: string;
@@ -13,16 +14,16 @@ const BingoCard: React.FC<BingoCardProps> = () => {
   >({});
 
   useEffect(() => {
-    let shuffledTextList = [...textList].sort(() => Math.random() - 0.5);
-    let grid: string[][] = [];
+    const shuffledTextList = [...textList].sort(() => Math.random() - 0.5);
+    const grid: string[][] = [];
 
     for (let i = 0; i < 5; i++) {
-      let row: string[] = [];
+      const row: string[] = [];
       for (let j = 0; j < 5; j++) {
         if (i === 2 && j === 2) {
           row.push("FREE SPACE");
         } else {
-          let text = shuffledTextList.pop() || "";
+          const text = shuffledTextList.pop() ?? "";
           row.push(text);
         }
       }
@@ -60,7 +61,7 @@ const BingoCard: React.FC<BingoCardProps> = () => {
               className="relative grid aspect-square items-center justify-center gap-1 border border-neutral-800 text-center lg:text-lg"
             >
               {revealedCells[`${i}-${j}`] && (
-                <img
+                <Image
                   src={`/images/dabbers/${revealedCells[`${i}-${j}`]}`}
                   alt="Dabber"
                   className="absolute inset-x-0 inset-y-0 z-10 mx-auto my-auto flex h-3/4 w-3/4 items-center justify-center"

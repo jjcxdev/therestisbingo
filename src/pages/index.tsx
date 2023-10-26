@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
 import BingoCard from "@/components/BingoCard";
-import Image from "next/image";
 
 export default function Home() {
   return (
