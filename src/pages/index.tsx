@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>The Rest is Bingo</title>
-        <meta name="description" content="created by jjcx" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

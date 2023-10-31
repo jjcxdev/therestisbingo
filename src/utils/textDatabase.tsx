@@ -15,7 +15,7 @@ const textList: string[] = [
   "Micah snaps his fingers",
   "Alan curses",
   "Alan's audio sounds like hes on the loo",
-  'Mich says "Shambolic"',
+  'Micah says "Shambolic"',
   'Anyone says "Absolutely Ridiculous"',
   "Anyone mentions Gary's love life",
   "Micah mentions Man City",
