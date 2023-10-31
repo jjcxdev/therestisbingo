@@ -23,7 +23,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         />
         <meta
           property="og:image"
-          content="http://therestisbingo.vercel.app/images/bingoScreenshot.png"
+          content="http://therestisbingo.vercel.app/images/ogbingo.png"
         />
 
         {/* Twitter Meta Tags */}
@@ -40,7 +40,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         />
         <meta
           name="twitter:image"
-          content="http://therestisbingo.vercel.app/images/bingoScreenshot.png"
+          content="http://therestisbingo.vercel.app/images/ogbingo.png"
         />
       </Head>
       <body>
