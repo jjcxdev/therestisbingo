@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { checkWinner } from "@/utils/patternLogic";
-import { dabberImages } from "@/utils/DabberList";
-import textList from "@/utils/TextDatabase";
+import { dabberImages } from "@/utils/dabberList";
+import textList from "@/utils/textDatabase";
 
 interface BingoCardProps {
   className?: string;
