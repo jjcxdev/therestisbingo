@@ -66,7 +66,7 @@ const BingoCard: React.FC<BingoCardProps> = ({ setShowModal }) => {
   return (
     <div
       role="grid"
-      className="grid max-h-[calc(100vh-20vh)] cursor-pointer auto-rows-fr grid-cols-5 items-center gap-1 md:auto-rows-auto"
+      className="grid cursor-pointer auto-rows-fr grid-cols-5 items-center gap-1 md:auto-rows-auto"
     >
       {bingoGrid.map((row, i) => (
         <div
