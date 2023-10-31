@@ -15,7 +15,7 @@ const Modal: React.FC<ModalProps> = ({ show, onClose }) => {
       ></div>
       <div className="relative z-30 w-3/4 max-w-sm rounded bg-white p-8 shadow-lg">
         <h2 className="mb-4 text-2xl">Congratulations!</h2>
-        <p>You've won. Now, go tell Alan and see if he gives a fuck.</p>
+        <p>You&apos;ve won. Now, go tell Alan and see if he gives a fuck.</p>
         <div className="">
           <button
             onClick={onClose}

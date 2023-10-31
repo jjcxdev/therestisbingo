@@ -3,7 +3,6 @@ import textList from "@/utils/textDatabase";
 import { dabberImages } from "@/utils/dabberList";
 import Image from "next/image";
 import { checkWinner } from "@/utils/patternLogic";
-import { check } from "prettier";
 
 interface BingoCardProps {
   className?: string;
@@ -11,7 +10,7 @@ interface BingoCardProps {
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const BingoCard: React.FC<BingoCardProps> = ({ showModal, setShowModal }) => {
+const BingoCard: React.FC<BingoCardProps> = ({ setShowModal }) => {
   const [bingoGrid, setBingoGrid] = useState<string[][]>([]);
   const [revealedCells, setRevealedCells] = useState<
     Record<string, boolean | string | null | undefined>
