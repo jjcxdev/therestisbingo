@@ -43,11 +43,11 @@ export default function Home() {
               aria-label="Bing Card"
               className="flex h-full w-full items-center justify-center px-1 py-4"
             >
-              <div>
+              <div className="w-[100vw]">
                 <BingoCard
                   showModal={showModal}
                   setShowModal={setShowModal}
-                  className=""
+                  className="w-[100vw]"
                 />
               </div>
             </div>
