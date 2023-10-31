@@ -24,7 +24,7 @@ export default function Home() {
 
         <main
           role="main"
-          className="relative z-10 flex h-screen w-full flex-col items-center"
+          className="relative z-10 flex h-full w-full flex-col items-center"
         >
           <Modal show={showModal} onClose={() => setShowModal(false)} />
 
