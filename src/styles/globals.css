@@ -21,3 +21,8 @@
     url("/fonts/Tenar.ttf") format("ttf"),
     url("/fonts/Tenar.woff2") format("woff2");
 }
+
+body,
+html {
+  background: #277205;
+}
