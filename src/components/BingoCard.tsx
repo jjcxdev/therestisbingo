@@ -82,7 +82,7 @@ const BingoCard: React.FC<BingoCardProps> = ({ setShowModal }) => {
               }, contains ${cell}`}
               key={j}
               onClick={() => handleCellClick(i, j)}
-              className="text-5xs relative grid h-full min-w-fit items-center justify-center gap-1 whitespace-normal break-words rounded-lg bg-neutral-900/80 text-center text-neutral-100 transition duration-300 sm:aspect-square lg:text-lg"
+              className="text-5xs relative grid h-full min-w-fit items-center justify-center gap-1 rounded-lg bg-neutral-900/80 text-center text-neutral-100 transition duration-300 sm:aspect-square lg:text-lg"
             >
               {revealedCells[`${i}-${j}`] && (
                 <Image
@@ -93,7 +93,7 @@ const BingoCard: React.FC<BingoCardProps> = ({ setShowModal }) => {
                   className="absolute inset-x-0 inset-y-0 z-10 mx-auto my-auto flex h-3/4 w-3/4 items-center justify-center"
                 />
               )}
-              <span className="3xl:max-w-[150px] 4xl:text-4xl 4xl:max-w-[300px] max-w[50px] z-0 p-[2px] text-xs lg:max-w-[100px] lg:p-2 xl:max-w-[110px] xl:text-sm 2xl:max-w-[125px]">
+              <span className="3xl:max-w-[150px] 4xl:text-4xl 4xl:max-w-[300px] max-w[50px] z-0 whitespace-normal break-words p-[2px] text-xs lg:max-w-[100px] lg:p-2 xl:max-w-[110px] xl:text-sm 2xl:max-w-[125px]">
                 {cell}
               </span>
             </div>
