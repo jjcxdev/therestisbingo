@@ -40,7 +40,7 @@ export default function Home() {
 
             <div
               role="region"
-              aria-label="Bing Card"
+              aria-label="Bingo Card"
               className="flex h-full w-full items-center justify-center px-1 py-4"
             >
               <div className="flex-grow-1">

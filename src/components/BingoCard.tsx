@@ -66,7 +66,7 @@ const BingoCard: React.FC<BingoCardProps> = ({ setShowModal }) => {
   return (
     <div
       role="grid"
-      className="w[100vw] grid cursor-pointer auto-rows-fr grid-cols-5 items-center gap-1 md:auto-rows-auto"
+      className="grid w-full cursor-pointer auto-rows-fr grid-cols-5 items-center gap-1 md:auto-rows-auto"
     >
       {bingoGrid.map((row, i) => (
         <div
@@ -82,7 +82,7 @@ const BingoCard: React.FC<BingoCardProps> = ({ setShowModal }) => {
               }, contains ${cell}`}
               key={j}
               onClick={() => handleCellClick(i, j)}
-              className="text-5xs relative grid aspect-square h-full min-w-fit items-center justify-center gap-1 rounded-lg bg-neutral-900/80 text-center text-neutral-100 transition duration-300 lg:text-lg"
+              className="text-5xs relative grid aspect-square h-full items-center justify-center gap-1 rounded-lg bg-neutral-900/80 text-center text-neutral-100 transition duration-300 lg:text-lg"
             >
               {revealedCells[`${i}-${j}`] && (
                 <Image
