@@ -93,7 +93,7 @@ const BingoCard: React.FC<BingoCardProps> = ({ setShowModal }) => {
                   className="absolute inset-x-0 inset-y-0 z-10 mx-auto my-auto flex h-3/4 w-3/4 items-center justify-center"
                 />
               )}
-              <span className="3xl:max-w-[150px] 4xl:text-4xl 4xl:max-w-[300px] z-0 p-[2px] text-xs lg:max-w-[100px] lg:p-2 xl:max-w-[110px] xl:text-sm 2xl:max-w-[125px]">
+              <span className="3xl:max-w-[150px] 4xl:text-4xl 4xl:max-w-[300px] max-w[50px] z-0 p-[2px] text-xs lg:max-w-[100px] lg:p-2 xl:max-w-[110px] xl:text-sm 2xl:max-w-[125px]">
                 {cell}
               </span>
             </div>
