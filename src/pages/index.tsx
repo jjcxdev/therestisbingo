@@ -24,26 +24,24 @@ export default function Home() {
 
         <main
           role="main"
-          className="relative z-10 flex h-full w-full flex-col items-center"
+          className="relative z-10 flex h-full w-full flex-col items-center justify-center"
         >
           <Modal show={showModal} onClose={() => setShowModal(false)} />
 
           <div className="flex h-full w-full flex-col items-center justify-around">
-            <div className="flex w-full justify-center">
-              <h1
-                aria-label="Main Title"
-                className="4xl:text-9xl flex-shrink-0 font-core text-6xl uppercase text-neutral-100 sm:text-8xl md:text-7xl"
-              >
-                The rest is Bingo
-              </h1>
-            </div>
+            <h1
+              aria-label="Main Title"
+              className="4xl:text-9xl flex h-fit flex-shrink-0 items-center justify-center align-middle font-core text-6xl uppercase leading-none text-neutral-100 sm:text-8xl md:text-7xl"
+            >
+              The rest is Bingo
+            </h1>
 
             <div
               role="region"
               aria-label="Bingo Card"
               className="flex h-full w-full items-center justify-center px-1 py-4"
             >
-              <div className="flex-grow-1">
+              <div className="flex-grow-1 pb-4">
                 <BingoCard
                   showModal={showModal}
                   setShowModal={setShowModal}
