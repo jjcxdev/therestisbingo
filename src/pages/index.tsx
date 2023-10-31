@@ -29,7 +29,7 @@ export default function Home() {
           <Modal show={showModal} onClose={() => setShowModal(false)} />
 
           <div className="flex h-full w-full flex-col items-center justify-around">
-            <div className="flex h-1/6 items-center">
+            <div className="flex h-fit items-center">
               <div className="flex w-full justify-center">
                 <h1
                   aria-label="Main Title"
@@ -48,7 +48,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex h-1/6 items-center justify-center">
+            <div className="flex h-fit items-center justify-center">
               <div>
                 <Button />
               </div>
