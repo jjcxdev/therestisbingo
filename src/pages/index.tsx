@@ -29,18 +29,21 @@ export default function Home() {
           <Modal show={showModal} onClose={() => setShowModal(false)} />
 
           <div className="flex h-full w-full flex-col items-center justify-around">
-            <div className="flex h-fit items-center">
-              <div className="flex w-full justify-center">
-                <h1
-                  aria-label="Main Title"
-                  className="4xl:text-9xl flex-shrink-0 font-core text-6xl uppercase text-neutral-100 sm:text-8xl md:text-7xl"
-                >
-                  The rest is Bingo
-                </h1>
-              </div>
+            <div className="flex w-full justify-center">
+              <h1
+                aria-label="Main Title"
+                className="4xl:text-9xl flex-shrink-0 font-core text-6xl uppercase text-neutral-100 sm:text-8xl md:text-7xl"
+              >
+                The rest is Bingo
+              </h1>
             </div>
-            <div role="region" aria-label="Bingo Card" className="">
-              <div className="flex h-fit items-center justify-center px-1 pb-4">
+
+            <div
+              role="region"
+              aria-label="Bing Card"
+              className="flex h-full w-full items-center justify-center px-1 py-4"
+            >
+              <div>
                 <BingoCard
                   showModal={showModal}
                   setShowModal={setShowModal}
@@ -48,7 +51,8 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex h-fit items-center justify-center">
+
+            <div className="flex h-fit w-full items-center justify-center">
               <div>
                 <Button />
               </div>
