@@ -12,6 +12,8 @@ export default {
         tenar: ["Tenar", ...fontFamily.sans],
       },
       fontSize: {
+        "5xs": "clamp(0.3rem, 1.2vw, 0.4rem)",
+        "4xs": "clamp(0.35rem, 1.35vw, 0.45rem)",
         "3xs": "clamp(0.4rem, 1.5vw, 0.5rem)",
         "2xs": "clamp(0.5rem, 1.8vw, 0.6rem)",
         xs: "clamp(0.6rem, 2vw, 0.75rem)",
@@ -27,6 +29,10 @@ export default {
         "7xl": "clamp(4rem, 7vw, 5rem)",
         "8xl": "clamp(5rem, 7.5vw, 6rem)",
         "9xl": "clamp(6rem, 8vw, 8rem)",
+      },
+      screens: {
+        "3xl": "1920px",
+        "4xl": "3840px",
       },
     },
   },
