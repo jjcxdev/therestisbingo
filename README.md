@@ -1,28 +1,65 @@
-# Create T3 App
+**Disclaimer:** This content is purely for entertainment purposes and is not endorsed by, affiliated with, or created by "The Rest is Football" podcast or Goalhanger. 
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
-## What's next? How do I make an app with this?
+# The Rest is Bingo
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+A simple web-based bingo game for "The Rest is Football" Podcast built with Next.js and React.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+![Screenshot](https://github.com/jjcxdev/therestisbingo/blob/main/public/images/bingoScreenshot.png) 
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Features
 
-## Learn More
+- Randomly generated Bingo cards from a preset list of text items.
+- Interactive cells that users can click to reveal a bingo dabber image.
+- Modal notification when a player achieves a winning bingo pattern.
+- Mobile-responsive design.
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Getting Started
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+### Prerequisites
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+- Node.js and npm
 
-## How do I deploy this?
+### Installation
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+1. Clone the repo:
+   `git clone https://github.com/jjcxdev/therestisbingo.git`
+
+2. Navigate to the directory:
+`cd your-repo-name`
+
+3. Install dependencies:
+`npm install`
+
+4. Run the development server:
+`npm run dev`
+
+5. Open your browser and navigate to `http://localhost:3000`. Enjoy!
+
+# Components
+
+- **BingoCard**: Represents the Bingo card grid. Generates a random 5x5 grid of text items and handles interactions such as revealing a cell.
+  
+- **Modal**: Displays a congratulatory message when a user wins.
+  
+- **Button**: A generic button component.
+
+# Utilities
+
+- **patternLogic**: Contains the logic to check for winning bingo patterns.
+  
+- **dabberList**: A list of available dabber images.
+  
+- **textDatabase**: A database of text items to be randomly placed on the Bingo card.
+
+# Contribution
+
+Contributions are welcome! Please fork this repository and open a pull request to add enhancements or fix issues.
+
+# License
+
+This project is open-source and available under the MIT License. See `LICENSE` for details.
+
+# Acknowledgements
+
+- Built with Next.js and React.
