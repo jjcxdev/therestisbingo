@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import textList from "@/utils/textDatabase";
-import { dabberImages } from "@/utils/dabberList";
 import Image from "next/image";
-import { checkWinner } from "@/utils/patternLogic";
+import { checkWinner } from "@/utils/PatternLogic";
+import { dabberImages } from "@/utils/DabberList";
+import textList from "@/utils/TextDatabase";
 
 interface BingoCardProps {
   className?: string;
@@ -82,7 +82,7 @@ const BingoCard: React.FC<BingoCardProps> = ({ setShowModal }) => {
               }, contains ${cell}`}
               key={j}
               onClick={() => handleCellClick(i, j)}
-              className="text-5xs relative grid h-full min-w-fit items-center justify-center gap-1 rounded-lg bg-neutral-900/80 text-center text-neutral-100 transition duration-300 sm:aspect-square lg:text-lg"
+              className="text-5xs relative grid aspect-square h-full min-w-fit items-center justify-center gap-1 rounded-lg bg-neutral-900/80 text-center text-neutral-100 transition duration-300 lg:text-lg"
             >
               {revealedCells[`${i}-${j}`] && (
                 <Image
