@@ -5,7 +5,7 @@ import Head from "next/head";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <html lang="en">
+    <>
       <Head>
         <title>The Rest is BINGO</title>
         <meta
@@ -43,11 +43,10 @@ const MyApp: AppType = ({ Component, pageProps }) => {
           content="http://therestisbingo.vercel.app/images/ogbingo.png"
         />
       </Head>
-      <body>
-        <Component {...pageProps} />
-        <Analytics />
-      </body>
-    </html>
+
+      <Component {...pageProps} />
+      <Analytics />
+    </>
   );
 };
 

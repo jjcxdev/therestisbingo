@@ -1,3 +1,5 @@
+"use client";
+
 import Head from "next/head";
 import React, { useState } from "react";
 import BingoCard from "@/components/BingoCard";
@@ -6,6 +8,10 @@ import Modal from "@/components/Modal";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
+
+  const refreshPage = () => {
+    window.location.reload();
+  };
   return (
     <>
       <Head>
@@ -26,12 +32,12 @@ export default function Home() {
           role="main"
           className="relative z-10 flex h-full w-full flex-col items-center justify-center"
         >
-          <Modal show={showModal} onClose={() => setShowModal(false)} />
+          <Modal show={showModal} onClose={refreshPage} />
 
           <div className="flex h-full w-full flex-col items-center justify-around">
             <h1
               aria-label="Main Title"
-              className="4xl:text-9xl flex h-fit flex-shrink-0 items-center justify-center align-middle font-core text-6xl uppercase leading-none text-neutral-100 sm:text-8xl md:text-7xl"
+              className="flex h-fit flex-shrink-0 items-center justify-center align-middle font-core text-6xl uppercase leading-none text-neutral-100 sm:text-8xl md:text-7xl 4xl:text-9xl"
             >
               The rest is Bingo
             </h1>
