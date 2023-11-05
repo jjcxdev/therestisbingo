@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import BingoCard from "@/components/BingoCard";
 import Button from "@/components/Button";
 import Modal from "@/components/Modal";
+import { GiSoccerBall } from "react-icons/gi";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -21,7 +22,7 @@ export default function Home() {
       </Head>
 
       <div
-        className="relative flex min-h-screen flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
+        className="relative flex h-screen flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/images/turf.webp')",
         }}
@@ -34,20 +35,30 @@ export default function Home() {
         >
           <Modal show={showModal} onClose={refreshPage} />
 
-          <div className="flex h-full w-full flex-col items-center justify-around">
-            <h1
-              aria-label="Main Title"
-              className="flex h-fit flex-shrink-0 items-center justify-center align-middle font-core text-6xl uppercase leading-none text-neutral-100 sm:text-8xl md:text-7xl 4xl:text-9xl"
-            >
-              The rest is Bingo
-            </h1>
+          <div className="flex h-full w-full flex-col items-center justify-center gap-1 py-8">
+            <div className="w-full px-1 md:max-w-[450px] md:px-0 3xl:max-w-[700px]">
+              <div></div>
+              <div className="flex w-full flex-col items-start justify-center align-middle font-core uppercase leading-none text-neutral-100">
+                <h1
+                  aria-label="Main Title"
+                  className="text-xs sm:text-sm md:text-xs"
+                >
+                  The rest is
+                </h1>
+                <div className="flex flex-row items-start">
+                  <h2 className="sm:text-xxl text-lg md:text-lg">Bingo</h2>
+                  <GiSoccerBall className="text-xxs h-fit w-fit pt-10" />
+                </div>
+              </div>
+              <div></div>
+            </div>
 
             <div
               role="region"
               aria-label="Bingo Card"
-              className="flex h-full w-full items-center justify-center px-1 py-4"
+              className="flex h-fit w-full items-center justify-center px-1"
             >
-              <div className="flex-grow-1 pb-4">
+              <div className="flex-grow-1 pb-8">
                 <BingoCard
                   showModal={showModal}
                   setShowModal={setShowModal}
