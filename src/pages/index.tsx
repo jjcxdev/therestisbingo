@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import BingoCard from "@/components/BingoCard";
 import Button from "@/components/Button";
 import Modal from "@/components/Modal";
-import { GiSoccerBall } from "react-icons/gi";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -47,7 +46,6 @@ export default function Home() {
                 </h1>
                 <div className="flex flex-row items-start">
                   <h2 className="sm:text-xxl text-lg md:text-lg">Bingo</h2>
-                  <GiSoccerBall className="text-xxs h-fit w-fit pt-11 sm:pt-[70px] md:pt-12" />
                 </div>
               </div>
               <div></div>
