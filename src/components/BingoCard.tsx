@@ -75,7 +75,7 @@ const BingoCard: React.FC<BingoCardProps> = ({ setShowModal }) => {
   return (
     <div
       role="grid"
-      className="grid w-full cursor-pointer auto-rows-fr grid-cols-5 items-center gap-1 md:auto-rows-auto"
+      className="grid w-full cursor-pointer auto-rows-fr grid-cols-5 items-center gap-1 rounded-lg border border-neutral-900/30 bg-neutral-900/20 p-1 shadow-lg md:max-w-[450px] md:auto-rows-auto 3xl:max-w-[700px]"
     >
       {bingoGrid.map((row, i) => (
         <div
@@ -93,8 +93,8 @@ const BingoCard: React.FC<BingoCardProps> = ({ setShowModal }) => {
               key={j}
               onClick={() => handleCellClick(i, j)}
               onKeyDown={(e) => handleKeyDown(e, i, j)}
-              className={`relative grid aspect-square h-full items-center justify-center gap-1 rounded-lg bg-neutral-900/80 text-center text-5xs text-neutral-100 transition duration-300 hover:bg-neutral-100 hover:text-neutral-900/80 focus:outline-none focus:ring-2 focus:ring-blue-500 lg:text-lg 
-              ${cell === "FREE SPACE" ? "bg-blue-500 font-tenar text-lg" : ""}`}
+              className={`text-vxs sm:text-xxxs md:text-xxxxs relative grid aspect-square h-full items-center justify-center gap-1 rounded-lg bg-neutral-900/80 text-center text-neutral-100 transition duration-300 hover:bg-neutral-100 hover:text-neutral-900/80 focus:outline-none focus:ring-2 focus:ring-blue-500 
+              ${cell === "FREE SPACE" ? "bg-blue-500 font-tenar" : ""}`}
             >
               {revealedCells[`${i}-${j}`] && (
                 <Image
@@ -105,7 +105,7 @@ const BingoCard: React.FC<BingoCardProps> = ({ setShowModal }) => {
                   className="absolute inset-x-0 inset-y-0 z-10 mx-auto my-auto flex h-fit w-fit items-center justify-center"
                 />
               )}
-              <span className="max-w[50px] z-0 whitespace-normal break-words p-[2px] text-xs lg:max-w-[100px] lg:p-2 xl:max-w-[110px] xl:text-sm 2xl:max-w-[125px] 3xl:max-w-[150px] 4xl:max-w-[300px] 4xl:text-4xl">
+              <span className="z-0 whitespace-normal break-words p-[2px] text-xs">
                 {cell}
               </span>
             </div>
