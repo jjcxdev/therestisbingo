@@ -14,7 +14,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         />
 
         {/* Facebook Meta Tags */}
-        <meta property="og:url" content="http://therestisbingo.vercel.app/" />
+        <meta property="og:url" content="http://therestisbingo.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="The Rest is BINGO" />
         <meta
@@ -23,16 +23,13 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         />
         <meta
           property="og:image"
-          content="http://therestisbingo.vercel.app/images/ogbingo.png"
+          content="http://therestisbingo.com/images/ogbingo.png"
         />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="therestisbingo.vercel.app" />
-        <meta
-          property="twitter:url"
-          content="http://therestisbingo.vercel.app/"
-        />
+        <meta property="twitter:domain" content="http://therestisbingo.com" />
+        <meta property="twitter:url" content="http://therestisbingo.com/" />
         <meta name="twitter:title" content="The Rest is BINGO" />
         <meta
           name="twitter:description"
@@ -40,7 +37,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         />
         <meta
           name="twitter:image"
-          content="http://therestisbingo.vercel.app/images/ogbingo.png"
+          content="http://therestisbingo.com/images/ogbingo.png"
         />
       </Head>
 
