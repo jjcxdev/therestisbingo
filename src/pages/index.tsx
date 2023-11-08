@@ -34,10 +34,10 @@ export default function Home() {
         >
           <Modal show={showModal} onClose={refreshPage} />
 
-          <div className="flex h-full w-full flex-col items-center justify-center gap-1 py-8">
-            <div className="w-full px-1 md:max-w-[450px] md:px-0 3xl:max-w-[700px]">
+          <div className="flex h-full w-full flex-col gap-1 sm:gap-2">
+            <div className="flex w-full justify-between px-1 md:px-0 ">
               <div></div>
-              <div className="flex w-full flex-col items-start justify-center align-middle font-core uppercase leading-none text-neutral-100">
+              <div className="flex w-full flex-col items-start justify-center pt-4 align-middle font-core uppercase leading-none text-neutral-100 md:max-w-[450px] 3xl:max-w-[700px]">
                 <h1
                   aria-label="Main Title"
                   className="text-xs sm:text-sm md:text-xs"
@@ -45,7 +45,7 @@ export default function Home() {
                   The rest is
                 </h1>
                 <div className="flex flex-row items-start">
-                  <h2 className="sm:text-xxl text-lg md:text-lg">Bingo</h2>
+                  <h2 className="text-lg sm:text-xxl md:text-lg">Bingo</h2>
                 </div>
               </div>
               <div></div>
